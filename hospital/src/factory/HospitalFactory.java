@@ -1,12 +1,12 @@
-package org.factory;
-import org.entity.Administrator;
-import org.entity.Doctor;
-import org.entity.Employee;
-import org.entity.Nurse;
-import org.entity.Patient;
-import org.service.DoctorPatientService;
+package factory;
+import entity.people.Administrator;
+import entity.people.Doctor;
+import entity.people.Employee;
+import entity.people.Nurse;
+import entity.people.Patient;
+import service.DoctorPatientService;
 
-class HospitalFactory implements PersonFactory {
+public class HospitalFactory implements PersonFactory {
     private final DoctorPatientService doctorPatientService;
 
     public HospitalFactory(DoctorPatientService service) {
@@ -25,7 +25,7 @@ class HospitalFactory implements PersonFactory {
                 
             case "nurse":
                 Doctor defaultDoctor = new Doctor("TEMP_DOC", "Default", "Doctor", 
-                                                "0000000000", "TEMP_EMP", "General", "Therapist");
+                                                "0000000000", "TEMP_EMP", "General", "Терапевт");
                 Nurse nurse = new Nurse(id, firstName, lastName, phoneNumber, 
                                       employeeId, department, defaultDoctor);
                 return nurse;

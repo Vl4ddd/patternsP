@@ -1,6 +1,6 @@
-package entity;
+package entity.people;
 
-class Administrator extends Employee {
+public class Administrator extends Employee {
     private static int adminCount = 0;
 
     public Administrator(String id, String firstName, String lastName, String phoneNumber, String employeeId, String department) {

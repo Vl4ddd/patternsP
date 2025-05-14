@@ -1,8 +1,10 @@
-package org.entity;
+package entity.people;
 import java.util.ArrayList;
 import java.util.List;
 
-class Patient extends Person implements Scheduleable {
+import entity.Scheduleable;
+
+public class Patient extends Person implements Scheduleable {
     private List<String> medicalHistory;
     private String currentAppointment;
 

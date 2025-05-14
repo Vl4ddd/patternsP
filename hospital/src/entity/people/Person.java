@@ -1,4 +1,4 @@
-package org.entity;
+package entity.people;
 
 abstract class Person {
     private final String id;

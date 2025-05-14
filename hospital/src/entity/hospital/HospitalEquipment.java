@@ -1,4 +1,4 @@
-package org.entity;
+package entity.hospital;
 public class HospitalEquipment {
     private final String equipmentId;
     private final String name;

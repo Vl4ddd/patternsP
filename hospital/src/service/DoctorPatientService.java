@@ -1,16 +1,17 @@
-package org.service;
+package service;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import src.Entity.Doctor;
-import src.Entity.Patient;
-import src.Entity.PatientAssignmentObservable;
-import src.Entity.PatientAssignmentObserver;
+import entity.people.Doctor;
+import entity.people.Patient;
+import observer.PatientAssignmentObservable;
+import observer.PatientAssignmentObserver;
 
-class DoctorPatientService implements PatientAssignmentObservable {
+
+public class DoctorPatientService implements PatientAssignmentObservable {
     private final Map<Doctor, List<Patient>> doctorPatientMap = new HashMap<>();
     private final List<PatientAssignmentObserver> observers = new ArrayList<>();
     

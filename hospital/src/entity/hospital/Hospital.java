@@ -1,8 +1,12 @@
-package org.entity;
+package entity.hospital;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class Hospital {
+import entity.people.Employee;
+import entity.people.Patient;
+
+public class Hospital {
     private static Hospital instance;
     private final List<Employee> employees;
     private final List<Patient> patients;
@@ -45,14 +49,14 @@ class Hospital {
         return rooms;
     }
 
-    public void printSickEmployees() {
-        System.out.println("Sick employees:");
-        for (Patient patient : patients) {
-            for (Employee employee : employees) {
-                if (employee.getId().equals(patient.getId())) {
-                    System.out.println(employee.getFullName() + " - " + patient.getMedicalHistory());
-                }
-            }
+    public void printEmployees() {
+        System.out.println("Все сотрудники: ");
+
+        for (Employee employee : employees) {
+
+            System.out.println(employee.getFullName() + " " + employee.getDepartment());
+
         }
+
     }
 }

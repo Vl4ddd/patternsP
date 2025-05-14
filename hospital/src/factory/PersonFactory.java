@@ -1,6 +1,6 @@
-package org.factory;
-import org.entity.Employee;
-import org.entity.Patient;
+package factory;
+import entity.people.Employee;
+import entity.people.Patient;
 
 interface PersonFactory {
     Patient createPatient(String id, String firstName, String lastName, String phoneNumber);

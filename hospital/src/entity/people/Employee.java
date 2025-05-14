@@ -1,6 +1,6 @@
-package org.entity;
+package entity.people;
 
-abstract class Employee extends Person {
+public abstract class Employee extends Person {
     private final String employeeId;
     private final String department;
 

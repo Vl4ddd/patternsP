@@ -1,5 +1,6 @@
-package org.entity;
+package entity.hospital;
 
+import entity.people.HospitalEmployee;
 
 class Room {
     private final String roomNumber;

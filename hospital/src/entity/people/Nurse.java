@@ -1,6 +1,6 @@
-package org.entity;
+package entity.people;
 
-class Nurse extends Employee implements HospitalEmployee {
+public class Nurse extends Employee implements HospitalEmployee {
     private Doctor supervisingDoctor;
 
     public Nurse(String id, String firstName, String lastName, String phoneNumber, String employeeId,
